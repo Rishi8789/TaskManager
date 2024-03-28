@@ -32,7 +32,7 @@ const Signin = () => {
 	return (
 		<div className='signup-form'>
 			<div className='signup-form__wrapper'>
-				<form className='form' onSubmit={handleSubmit}>
+				<form className='form' >
 					<h4>Sign In</h4>
 					<div className='form-group'>
 						<input
@@ -55,7 +55,7 @@ const Signin = () => {
 						/>
 					</div>
 					<div className='form-group'>
-						<button className='button'>Sing In</button>
+						<button className='button' onSubmit={handleSubmit}  style={{backgroundColor:"red"}}>Sing In</button>
 					</div>
 				</form>
 			</div>
